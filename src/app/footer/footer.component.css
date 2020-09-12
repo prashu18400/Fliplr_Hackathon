@@ -1,0 +1,18 @@
+ul li{
+    padding-bottom: 7px;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul li a:hover{
+    color:blue;
+    text-decoration: none;
+}
+.ml{
+    margin-left: 20px;
+}
+@media only screen and  (max-width:760px){
+    .ml{
+        margin-left: 0px;
+    }
+}
