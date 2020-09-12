@@ -22,3 +22,88 @@
     </div>
 </div>
 <p style="font-size:xx-large;color:#6f42c1;" class="home_text text-center mt-2">Coronavirus Statistics</p>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-lg-4 col-12">
+            <img class="row-num" src="assets/images/coronavirus.png" width="20%">
+            <p class="home_text text-monospace row-num">14,112,007</p>
+            <h5 class="row-num-head">Active Cases</h5>
+        </div>
+        <div class="col-lg-4 col-12">
+            <img src="assets/images/coronavirus.png" class="row-num" width="20%">
+            <p class="home_text text-monospace row-num">595,685</p>
+            <h5 class="row-num-head">Total Deaths</h5>
+        </div>
+        <div class="col-lg-4 col-12">
+            <img src="assets/images/coronavirus.png" class="row-num" width="20%">
+            <p class="home_text text-monospace row-num">8,397,665</p>
+            <h5 class="row-num-head">Recovered Cases</h5>
+        </div>
+    </div>
+</div>
+<hr class="ml-5 mr-5">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="https://colorlib.com/preview/theme/covid/images/hero_1.jpg" width="450px">
+            <a href="https://www.youtube.com/watch?v=9pVy8sRC440" target="_self"><button
+                    class="btn fa">&#xf04b;</button></a>
+        </div>
+        <div class="col-lg-6">
+            <p class="home_text" style="font-size: large;">What is Coronavirus?</p>
+            <p>Watch this short video,you will get to know</p>
+            <ul>
+                <li style="list-style-type:upper-roman;">What is Community Spread?</li>
+                <li style="list-style-type:upper-roman;">Why it spreads Fast?</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class=" container">
+    <p style="text-align:center;font-size:xx-large;color:#6f42c1;" class="home_text mt-3">
+        How To Protect Yourself
+    </p>
+    <div class="row mt-5">
+        <div class="col-lg-4 col-12">
+            <h4>You Should do</h4>
+            <ul>
+                <li *ngFor="let Do of Dos"><span class="mr-2">&#9989;</span>{{ Do }}</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-12">
+            <h4>You Should avoid</h4>
+            <ul>
+                <li *ngFor="let Do of Donts"><span class="mr-2">&#10060;</span>{{ Do }}</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-12">
+            <img src="https://colorlib.com/preview/theme/covid/images/protect.png" width="100%">
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <p class="home_text text-center" style="font-size:xx-large;color:#6f42c1;">Symptoms of Coronavirus</p>
+    <p class="text-center text-danger">COVID-19 affects different people in different ways. <br />Most infected
+        people
+        will develop
+        mild to moderate
+        illness
+        and recover without hospitalization.</p>
+    <div class=" row">
+        <div *ngFor="let sym of Symptoms" class="col-lg-6">
+            <div class="bor" style="margin-bottom:30px">
+                <div class="row">
+                    <div class="col-lg-2 col-2">
+                        <img src="{{sym[0]}}" width=80px>
+                    </div>
+                    <div class="col-lg-10 col-10">
+                        <p class="home_text text-primary" style="font-size: large;">{{sym[1]}}</p>
+                        <p>{{sym[2]}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
