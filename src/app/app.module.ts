@@ -12,7 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
 import { HttpClientModule } from '@angular/common/http';
-import { freeApiService } from './services/freeapi.service'
+import { freeApiService } from './services/freeapi.service';
+import { Mainpic1Component } from './mainpic1/mainpic1.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { freeApiService } from './services/freeapi.service'
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    NewsComponent
+    NewsComponent,
+    Mainpic1Component
   ],
   imports: [
     BrowserModule,

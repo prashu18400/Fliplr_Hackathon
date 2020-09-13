@@ -6,6 +6,7 @@
         "freeapi",
         "freeapiserv",
         "httpclient",
-        "lstcomments"
+        "lstcomments",
+        "remtd"
     ]
 }
