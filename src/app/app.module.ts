@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
+import { HttpClientModule } from '@angular/common/http';
+import { freeApiService } from './services/freeapi.service'
+
 
 @NgModule({
   declarations: [
@@ -26,9 +29,10 @@ import { NewsComponent } from './news/news.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [freeApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

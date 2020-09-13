@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Comments } from '../classes/comments';
+import { freeApiService } from '../services/freeapi.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
+
 
 }
