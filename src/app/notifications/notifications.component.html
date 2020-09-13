@@ -1,1 +1,6 @@
-<p>notifications works!</p>
+<table>
+    <tr *ngFor="let lst of lstcomments">
+        <td>{{lst.title}}</td>
+        <td><a href="{{lst.link}}">{{lst.link}}</a></td>
+    </tr>
+</table>
