@@ -10,7 +10,6 @@ import { freeApiService } from '../services/freeapi.service';
 export class NotificationsComponent implements OnInit {
 
   lstcomments: Comments[];
-  heros = ["prashu"];
   constructor(private _freeapi: freeApiService) { }
   ngOnInit() {
     this._freeapi.getcomments()

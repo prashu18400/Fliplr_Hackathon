@@ -1,6 +1,22 @@
-<table>
-    <tr *ngFor="let lst of lstcomments">
-        <td>{{lst.title}}</td>
-        <td><a href="{{lst.link}}">{{lst.link}}</a></td>
-    </tr>
-</table>
+<div class="table-wrapper-scroll-y my-custom-scrollbar mt-5">
+    <table class="container table table-bordered table-striped mb-0" id="customers">
+        <tr>
+
+            <td id="date">Date</td>
+            <td class="remtd" style="font-size: larger;">Title</td>
+            <td class="remtd">Resource Link</td>
+
+        </tr>
+        <tr *ngFor="let lst of lstcomments">
+            <td *ngIf="lst.title.length>10;else elseBlock">{{lst.title.substring(0,10)}}</td>
+            <ng-template #elseBlock>
+                <td>None</td>
+            </ng-template>
+            <td *ngIf="lst.title.length>10;else elseBlock1">{{lst.title.substring(10)}}</td>
+            <td><a href="{{lst.link}}">{{lst.link}}</a></td>
+            <ng-template #elseBlock1>
+                <td>{{lst.title}}</td>
+            </ng-template>
+        </tr>
+    </table>
+</div>
