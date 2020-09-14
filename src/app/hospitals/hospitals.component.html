@@ -1,1 +1,29 @@
-<p>hospitals works!</p>
+<h3 class="text-center mt-4">Hospitals & Beds</h3>
+<p class="container text-danger" style="font-size:large">As COVID-19 spreads in India, it is essential to evaluate the
+    country's capacity to
+
+    treat severe
+    cases. Methods We
+    combined data on public and private sector hospitals in India to produce state level estimates of hospital beds in
+    both Rural and Urban areas of all states.</p>
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar mt-5">
+    <table class="container table table-bordered table-striped mb-0" id="customers">
+        <thead>
+            <th style="width:40%">State</th>
+            <th>Rural Hospitals</th>
+            <th>Rural Beds</th>
+            <th>Urban Hospitals</th>
+            <th>Urban Beds</th>
+            <th>Total Beds</th>
+        </thead>
+        <tr *ngFor="let c of lstcomments">
+            <td>{{c.state}}</td>
+            <td>{{c.ruralHospitals}}</td>
+            <td>{{c.ruralBeds}}</td>
+            <td>{{c.urbanHospitals}}</td>
+            <td>{{c.urbanBeds}}</td>
+            <td>{{c.totalBeds}}</td>
+        </tr>
+    </table>
+</div>

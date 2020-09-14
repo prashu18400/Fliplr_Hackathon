@@ -13,7 +13,13 @@ import { FooterComponent } from './footer/footer.component';
 import { NewsComponent } from './news/news.component';
 import { HttpClientModule } from '@angular/common/http';
 import { freeApiService } from './services/freeapi.service';
+import { freeApiCont } from './services/freeApiContacts';
+import { MedColStu } from './services/freemed';
 import { Mainpic1Component } from './mainpic1/mainpic1.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { freeApiHos } from './services/freehosp';
+import { ChartsModule } from 'ng2-charts';
+
 
 
 @NgModule({
@@ -32,9 +38,13 @@ import { Mainpic1Component } from './mainpic1/mainpic1.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ChartsModule
+
   ],
-  providers: [freeApiService],
+  providers: [freeApiService, freeApiCont, MedColStu, freeApiHos],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

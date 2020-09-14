@@ -18,3 +18,8 @@
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+  @media only screen and (max-width:760px){
+    #myBtn{
+      font-size: 7px;
+    }
+  }

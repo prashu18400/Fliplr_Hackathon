@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Comments } from '../classes/comments';
-import { freeApiService } from '../services/freeapi.service';
+import { Contacts } from '../classes/contacts';
+import { freeApiCont } from '../services/freeApiContacts';
 
 @Component({
   selector: 'app-contact',
@@ -8,8 +8,16 @@ import { freeApiService } from '../services/freeapi.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  lstcomments: Contacts[];
+  constructor(private _freeapi: freeApiCont) { }
+  ngOnInit() {
+    this._freeapi.getcontacts()
+      .subscribe(
+        data => {
+          this.lstcomments = data.data.contacts.regional;
+          console.log(this.lstcomments);
+        }
+      );
   }
 
 
