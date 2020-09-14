@@ -1,12 +1,19 @@
+<p class="text-center mt-5" style="text-align:center;font-size:xx-large;color:#6f42c1;font-weight:bolder">Notifications
+</p>
+<p class="text-center">With each phase of the COVID lockdown, we've seen multiple cautionary steps with frequent
+    detailed
+    <br />measures and guidelines in
+    such a short span of time.Provided herein below is a short summary of the developments so far. </p>
 <div class="table-wrapper-scroll-y my-custom-scrollbar mt-5">
+
     <table class="container table table-bordered table-striped mb-0" id="customers">
-        <tr>
-
-            <td id="date">Date</td>
-            <td class="remtd" style="font-size: larger;">Title</td>
-            <td class="remtd">Resource Link</td>
-
-        </tr>
+        <thead>
+            <tr>
+                <th id="date" class="text-center" style="font-size: larger;">Date</th>
+                <th class="remtd text-center" style="font-size: larger;">Title</th>
+                <th class="remtd text-center" style="font-size: larger;">Resource Link</th>
+            </tr>
+        </thead>
         <tr *ngFor="let lst of lstcomments">
             <td *ngIf="lst.title.length>10;else elseBlock">{{lst.title.substring(0,10)}}</td>
             <ng-template #elseBlock>

@@ -1,0 +1,16 @@
+.ml{
+    margin-left:auto;
+}
+#sp{
+    font-weight: bold;
+    color:pink;
+    font-size:30px;
+}
+@media only screen and (max-width:760px){
+    .ml{
+        margin-left:100px;
+    }
+    #sp{
+        font-size: 24px;
+    }
+}

@@ -1,1 +1,15 @@
-<p>Contact works!</p>
+<p class="text-center mt-5" style="text-align:center;font-size:xx-large;color:#6f42c1;font-weight:bolder">Helpline
+    Numbers</p>
+<div class="table-wrapper-scroll-y my-custom-scrollbar mt-5">
+
+    <table id="dtBasicExample" class="container table table-bordered table-striped mb-0" id="customers">
+        <thead>
+            <th class="text-center">State</th>
+            <th class="text-center">Helpline Number</th>
+        </thead>
+        <tr class="text-center" *ngFor="let s of lstcomments">
+            <td>{{s.loc}}</td>
+            <td>{{s.number}}</td>
+        </tr>
+    </table>
+</div>
